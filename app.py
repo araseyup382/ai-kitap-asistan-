@@ -84,7 +84,7 @@ if not st.session_state['logged_in']:
     login_screen()
 else:
     # API Ayarları
-    os.environ["OPENAI_API_KEY"] = "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"
+    os.environ["OPENAI_API_KEY"] = "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"
     os.environ["SERPER_API_KEY"] = "854b3a3e7b17a112569127fdc86e920ad60499a5"
     asistan_beyni = ChatOpenAI(model_name="gpt-4o-mini", temperature=0.7)
     search_tool = SerperDevTool()
@@ -125,4 +125,5 @@ else:
                 st.info(result)
             except Exception as e:
                 st.error(f"Hata: {e}")
+
     st.markdown('</div>', unsafe_allow_html=True)
