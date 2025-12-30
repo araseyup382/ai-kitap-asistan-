@@ -4,7 +4,7 @@ from crewai_tools import SerperDevTool
 
 # --- 1. AYARLAR VE ANAHTARLAR ---
 # Buraya kendi API anahtarlarını yapıştır
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "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"
 
 # Ajanların internette arama yapabilmesi için gerekli araç
 search_tool = SerperDevTool()
@@ -122,3 +122,4 @@ result = my_crew.kickoff()
 print("\n\n################ SONUÇ RAPORU ################\n")
 
 print(result)
+
